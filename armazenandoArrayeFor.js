@@ -2,14 +2,23 @@ const funcs = [];   // array vazio
 
 for (let r = 0; r < 10; r++){
       funcs.push(()=>{              //Adicionando no array atravez do .push()
-           console.log(r);          //Utilizando a função através do arrowfunction.
+           console.log(r);          //Utilizando a função " arrowfunction."
       });
-;}
+};
 
 funcs[5]();
 funcs[2]();
 
-/***************Armazenando valores no Array ************** */
+
+
+const value = [2,3,6,8,10,15];
+
+for (let r = 0; r < value.length; r++){
+      console.log(`a chave ${r} recebe o elemento ${value[r]}`)
+};
+
+
+/***************Armazenando valores no Array através da Function ************** */
 
 const cadastro = [];
 
@@ -25,3 +34,27 @@ const info = (name,lastname,age,city) =>{
 info("Lucas","Cavalcante de Rezende", "29","Caldas Novas" );
 
 console.log(cadastro);
+
+/*********Atribuindo Valores no ARRAY manualmente */
+
+
+const person = ['name', 'height', 'city', 'age'];
+name = ['Lucas'];
+height = [1.84];
+city = ['Caldas Novas'];
+age = [29];
+
+
+    if ( age < 10){
+      console.log( name + 'você é uma crianca');
+
+    } else if ( age >= 10 && age < 16 ){
+        console.log( name + 'você é um adolecente');
+
+    } else if ( age >= 17 && age <= 50) {
+        console.log(name + ' você é adulto') ;
+
+    } else {
+        console.log(name + 'você é idoso(a)');
+    }
+console.log(` Olá ${name},sua idade é ${age}, altura ${height}m, você mora em ${city}`);
