@@ -4,7 +4,6 @@ for (let r = 0; r < 10; r++){
       funcs.push(()=>{              //Adicionando no array atravez do .push()
            console.log(r);          //Utilizando a função através do arrowfunction.
       });
-
 ;}
 
 funcs[5]();
