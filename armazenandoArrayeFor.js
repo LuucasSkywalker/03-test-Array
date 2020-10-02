@@ -25,11 +25,7 @@ const cadastro = [];
 
 const info = (name,lastname,age,city) =>{
     
-   return cadastro.push(
-    name,
-    lastname,
-    age,
-    city);
+   return cadastro.push(name,lastname,age,city);
     
 };
 info("Lucas","Cavalcante de Rezende", "29","Caldas Novas" );
