@@ -5,9 +5,10 @@ for (let r = 0; r < 10; r++){
            console.log(r);          //Utilizando a função " arrowfunction."
       });
 };
+funcs[6]()
+console.log(funcs.length)  // LENGTH ,pergunta quantos elementos ha dentro do array
 
-funcs[5]();
-funcs[2]();
+
 
 
 
