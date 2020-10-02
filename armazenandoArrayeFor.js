@@ -58,3 +58,9 @@ age = [29];
         console.log(name + 'você é idoso(a)');
     }
 console.log(` Olá ${name},sua idade é ${age}, altura ${height}m, você mora em ${city}`);
+
+/************************************************ */
+
+const arraymethods = ['Lucas','Larissa','Annabelle'];
+
+console.log(arraymethods[2])
