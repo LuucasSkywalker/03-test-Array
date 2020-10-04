@@ -61,3 +61,11 @@ console.log(` Olá ${name},sua idade é ${age}, altura ${height}m, você mora em
 const arraymethods = ['Lucas','Larissa','Annabelle'];
 
 console.log(arraymethods[2])
+
+/******percorendo um array com for****** */
+
+const names = ['name:Lucas','name:Larissa','name:Annabelle'];
+
+for (let n = 0; n < names.length; n++){
+    console.log(`names = ${names[n]}`)
+};
