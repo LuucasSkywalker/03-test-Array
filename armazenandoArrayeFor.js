@@ -67,5 +67,5 @@ console.log(arraymethods[2])
 const names = ['name:Lucas','name:Larissa','name:Annabelle'];
 
 for (let n = 0; n < names.length; n++){
-    console.log(`names = ${names[n]}`)
+    console.log(`${n} = ${names[n]}`)
 };
