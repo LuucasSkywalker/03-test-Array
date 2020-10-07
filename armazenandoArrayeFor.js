@@ -70,7 +70,7 @@ for (let n = 0; n < names.length; n++){
     console.log(`${n} = ${names[n]}`)
 };
 
-  /******************************************* */
+/******************************************* */
 //criando uma função dentro do array
 
 const name = [(name1)=>{return name1}];
