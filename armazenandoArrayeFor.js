@@ -69,3 +69,9 @@ const names = ['name:Lucas','name:Larissa','name:Annabelle'];
 for (let n = 0; n < names.length; n++){
     console.log(`${n} = ${names[n]}`)
 };
+
+  /******************************************* */
+//criando uma função dentro do array
+
+const name = [(name1)=>{return name1}];
+console.log(name[0]('Lucas, Larissa, AnnaBelle'));
