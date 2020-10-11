@@ -32,6 +32,10 @@ info("Lucas","Cavalcante de Rezende", "29","Caldas Novas" );
 
 console.log(cadastro);
 
+
+const array  = [(nameadmin) => {return nameadmin}];
+    console.log( array[0]('Lucas Cavalcante')); 
+
 /*********Atribuindo Valores no ARRAY manualmente */
 
 
