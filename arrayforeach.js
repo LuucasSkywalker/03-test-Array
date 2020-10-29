@@ -1,5 +1,23 @@
 //RASCULHOS FOREACH
-//o método forEach() permite executar uma função para cada item de um array.
+/*o método forEach() permite executar uma função para cada item de um array.
+uma função forEach esperá um parâmetro obrigatório, ou sejá quando usar um
+forEach deve ser passar pelo menos um parâmetro dentro forEach(parâmetro) */
+
+const school = ['Nivo das Neves','Mather Izabel','Supletivo'] //array 
+
+function schoolDistrict (name, indice ){  /*função nomeada schollDistrict com os
+                                          os parâmetros do array, [name,indice]
+                                          */
+    console.log(`${indice}, ${name}`)
+}
+    school.forEach(schoolDistrict)       /* O método forEach() permite executar uma função 
+                                         para cada item de um array. Veja sobre forEach
+                                         na paste Estudos Function */
+
+
+//---------------------------------------------------------------------**
+/*FUNÇÕES CALLBACK */
+//CALLBACK É UMA FUNÇÃO QUE IRÁ RETORNAR QUANDO UM EVENTO ACONTECER
 
 const school = ['Nivo das Neves','Mather Izabel','Supletivo'] //array 
 
@@ -13,14 +31,57 @@ function schoolDistrict (name, indice ){  /*função nomeada schollDistrict com 
                                          na paste Estudos Function */
 
 //---------------------------------------------------------------------**
-//Valor retornado: Verde Amarelo Azul Branco
+const listaApro = [{name:'Lucas', Note: 9.6},
+                   {name:'Larissa', Note: 7.2},
+                   {name:'Cleyri', Note: 5.6},
+                   {name:'Annabelle', Note: 5.1}]
+
+
+function aprovados (name,indice){
+ console.log(indice, name)
+ 
+}
+listaApro.forEach(aprovados);
+
+//---------------------------------------------------------------------**
+//FAZENDO UM FOREACH USANDO ARROW FUNCTION
+const listaApro1 = [{name:'Lucas', Note: 9.6},
+                   {name:'Larissa', Note: 7.2},
+                   {name:'Cleyri', Note: 5.6},
+                   {name:'Annabelle', Note: 5.1}]
+
+
+listaApro1.forEach((aprovados, indice)=> {  /* Usando um forEach numa função arrow function
+                                            não precisa declarar um nome, poís o forEach
+                                            precisa de um parâmetro aleatório, então deixa
+                                            um que condiz com o código a ser execultado */
+console.log(indice, aprovados)
+});
+
+
+
+/*pegando valores e armazenando dentro de um array vazio somente os aprovados
+usando o forEach e o if para dizer a condição que irá validar*/
+const listaApro1 = [{name:'Lucas', Note: 9.6},
+                   {name:'Larissa', Note: 7.2},
+                   {name:'Cleyri', Note: 5.6},
+                   {name:'Annabelle', Note: 5.1}]
+
+const list = []
+listaApro1.forEach((aprovados, indice, nota)=> {
+  if (aprovados.Note >= 7){
+      list.push(aprovados)
+  }
+});
+console.log(list.length)
+
+
+
 cores = ["Verde", "Amarelo", "Azul", "Branco"];
 
-function print(item) {
-    console.log(item);
-}
-
-cores.forEach(print);
+cores.forEach((collor, indice) =>{
+  console.log(indice,collor)
+});
 
 //---------------------------------------------------------------------**
 //Valor retornado: 0 2 4 6 8 10 12 14 16 18 20
