@@ -61,6 +61,8 @@ const listaCity = tabelasCliente.filter(item => {
     // Filtro personalizado: retornar itens com idade maior que 25
     return item.city == 'Caldas Novas';
     // return item.age > 20,
+
+});
 console.log(listaCity) 
 
 /*O método filter() está sendo aplicado ao array "tabelasCliente". Ele percorre 
@@ -78,4 +80,33 @@ nome "
 O filter() cria e retorna um novo array (listaCity) que contém apenas os objetos do 
 array original (tabelasCliente) cuja propriedade city seja exatamente 'Caldas Novas'.*/
 
-});
+
+
+// ----------------------------------------------------------------------------
+
+// Exemplo com Fluxo de filter()
+const numeros = [1, 2, 3, 4, 5, 6];
+
+// Queremos filtrar apenas os números pares
+const numerosPares = numeros.filter((numero => {
+    return numero % 2 === 0; // Se o número for par, retorna true
+}));
+
+console.log(numerosPares); // [2, 4, 6]
+/* Detalhamento do Fluxo:
+Array Original:
+
+O array numeros = [1, 2, 3, 4, 5, 6].
+Iteração com filter():
+
+O filter() começa a iterar sobre cada item do array original:
+1º elemento: 1 → 1 % 2 === 0 retorna false (não entra no novo array).
+2º elemento: 2 → 2 % 2 === 0 retorna true (entra no novo array).
+3º elemento: 3 → 3 % 2 === 0 retorna false (não entra no novo array).
+4º elemento: 4 → 4 % 2 === 0 retorna true (entra no novo array).
+5º elemento: 5 → 5 % 2 === 0 retorna false (não entra no novo array).
+6º elemento: 6 → 6 % 2 === 0 retorna true (entra no novo array).
+Novo Array:
+
+O novo array numerosPares será [2, 4, 6], contendo apenas os números que passaram 
+no teste.*/
